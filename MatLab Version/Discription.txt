@@ -1,0 +1,2 @@
+This is the same algorthim impelmented in matlab
+JUST RUN THE PROGRAM IN MATLAB AND THE GRAPH WILL BE GENRATED
