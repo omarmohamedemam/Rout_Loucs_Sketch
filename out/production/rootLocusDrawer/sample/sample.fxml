@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="viewButton" layoutX="30.0" layoutY="515.0" mnemonicParsing="false" onAction="#View" prefHeight="25.0" prefWidth="115.0" text="Diplay Answer" textFill="#c74949" />
+      <ScrollPane fx:id="scrollPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="480.0" prefWidth="611.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <children>
+                  <Canvas fx:id="canvas" height="455.0" layoutX="7.0" layoutY="7.0" width="589.0" AnchorPane.bottomAnchor="538.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="404.0" AnchorPane.topAnchor="6.800000000000011" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <CheckBox fx:id="rulesBox" layoutX="40.0" layoutY="564.0" mnemonicParsing="false" text="Use Rules" textFill="#dd1010" />
+      <Slider fx:id="scaler" layoutX="437.0" layoutY="489.0" onDragDetected="#setScale" onDragDone="#setScale" onDragDropped="#setScale" onDragEntered="#setScale" onDragExited="#setScale" onDragOver="#setScale" onMouseDragEntered="#setScale" onMouseDragExited="#setScale" onMouseDragOver="#setScale" onMouseDragReleased="#setScale" onMouseDragged="#setScale" onMouseReleased="#setScale" orientation="VERTICAL" prefHeight="71.0" prefWidth="84.0" />
+      <Label layoutX="442.0" layoutY="564.0" prefHeight="17.0" prefWidth="47.0" text="Zoom" textFill="#ea0707">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="scaleLabel" layoutX="494.0" layoutY="568.0" text="0%" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="By: Omar Emam" />
+   </children>
+</Pane>
